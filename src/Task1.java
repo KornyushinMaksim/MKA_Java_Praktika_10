@@ -35,78 +35,82 @@ public class Task1 {
 //      ■ Сформировать третий массив, содержащий элементы обоих массивов без повторений;
 
         Arrays.fill(arrRes, 0);
-        for (int i = 0; i < arr1.length; i++) {
-            int count = 0;
-            if (arr1[i] == 0 && flag) {
-                arrRes[k++] = arr1[i];
-                flag = false;
-            }
-            for (int j = 0; j < sizeRes; j++) {
-                if (arr1[i] != arrRes[j]) {
-                    count++;
+        {
+            for (int i = 0; i < arr1.length; i++) {
+                int count = 0;
+                if (arr1[i] == 0 && flag) {
+                    arrRes[k++] = arr1[i];
+                    flag = false;
+                }
+                for (int j = 0; j < sizeRes; j++) {
+                    if (arr1[i] != arrRes[j]) {
+                        count++;
+                    }
+                }
+                if (count == sizeRes) {
+                    arrRes[k++] = arr1[i];
                 }
             }
-            if (count == sizeRes) {
-                arrRes[k++] = arr1[i];
-            }
-        }
-        for (int i = 0; i < arr2.length; i++) {
-            int count = 0;
-            if (arr2[i] == 0 && flag) {
-                arrRes[k++] = arr2[i];
-                flag = false;
-            }
-            for (int j = 0; j < sizeRes; j++) {
-                if (arr2[i] != arrRes[j]) {
-                    count++;
+            for (int i = 0; i < arr2.length; i++) {
+                int count = 0;
+                if (arr2[i] == 0 && flag) {
+                    arrRes[k++] = arr2[i];
+                    flag = false;
+                }
+                for (int j = 0; j < sizeRes; j++) {
+                    if (arr2[i] != arrRes[j]) {
+                        count++;
+                    }
+                }
+                if (count == sizeRes) {
+                    arrRes[k++] = arr2[i];
                 }
             }
-            if (count == sizeRes) {
-                arrRes[k++] = arr2[i];
-            }
+            int[] arrTemp = new int[k];
+            System.arraycopy(arrRes, 0, arrTemp, 0, k);
+            System.out.println("\nмассив, содержащий элементы обоих массивов без повторений\n" + Arrays.toString(arrTemp));
         }
-        int[] arrTemp = new int[k];
-        System.arraycopy(arrRes, 0, arrTemp, 0, k);
-        System.out.println("\nмассив, содержащий элементы обоих массивов без повторений\n" + Arrays.toString(arrTemp));
 
 //        ■ Сформировать третий массив, содержащий только уникальные элементы каждого из массивов;
 
         Arrays.fill(arrRes, 0);
         k = 0;
-        for (int i = 0; i < arr1.length; i++){
-            int count = 0;
-            for (int j = 0; j < arr1.length; j++){
-                if (arr1[i] != arr1[j]) {
-                    for (int f = 0; f < sizeRes; f++){
-                        if (arr1[i] != arrRes[f]){
-                            count++;
+        {
+            for (int i = 0; i < arr1.length; i++) {
+                int count = 0;
+                for (int j = 0; j < arr1.length; j++) {
+                    if (arr1[i] != arr1[j]) {
+                        for (int f = 0; f < sizeRes; f++) {
+                            if (arr1[i] != arrRes[f]) {
+                                count++;
+                            }
                         }
                     }
                 }
+                if (count == sizeRes) {
+                    arrRes[k++] = arr1[i];
+                }
             }
-            if (count == sizeRes){
-                arrRes[k++] = arr1[i];
-            }
-        }
-        for (int i = 0; i < arr2.length; i++){
-            int count = 0;
-            for (int j = 0; j < arr2.length; j++){
-                if (arr2[i] != arr2[j]) {
-                    for (int f = 0; f < sizeRes; f++){
-                        if (arr2[i] != arrRes[f]){
-                            count++;
+            for (int i = 0; i < arr2.length; i++) {
+                int count = 0;
+                for (int j = 0; j < arr2.length; j++) {
+                    if (arr2[i] != arr2[j]) {
+                        for (int f = 0; f < sizeRes; f++) {
+                            if (arr2[i] != arrRes[f]) {
+                                count++;
+                            }
                         }
                     }
                 }
+                if (count == sizeRes) {
+                    arrRes[k++] = arr2[i];
+                }
             }
-            if (count == sizeRes){
-                arrRes[k++] = arr2[i];
-            }
+            int[] arrTemp1 = new int[k];
+            System.out.println(k);
+            System.arraycopy(arrRes, 0, arrTemp1, 0, k);
+            System.out.println("\nмассив, содержащий только уникальные элементы каждого из массивов\n"
+                    + Arrays.toString(arrTemp1));
         }
-        int[] arrTemp1 = new int[k];
-        System.out.println(k);
-        System.arraycopy(arrRes, 0, arrTemp1, 0, k);
-        System.out.println("\nмассив, содержащий только уникальные элементы каждого из массивов\n"
-                + Arrays.toString(arrTemp1));
     }
 }
