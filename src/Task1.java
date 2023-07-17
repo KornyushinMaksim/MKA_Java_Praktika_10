@@ -36,7 +36,8 @@ public class Task1 {
 
         Arrays.fill(arrRes, 0);
         {
-            for (int i = 0; i < arr1.length; i++) {
+            for (int i : arr1) {
+                //for (int i = 0; i < arr1.length; i++) {
                 int count = 0;
                 if (arr1[i] == 0 && flag) {
                     arrRes[k++] = arr1[i];
@@ -50,8 +51,10 @@ public class Task1 {
                 if (count == sizeRes) {
                     arrRes[k++] = arr1[i];
                 }
+                //}
             }
-            for (int i = 0; i < arr2.length; i++) {
+            for (int i : arr2) {
+                //for (int i = 0; i < arr2.length; i++) {
                 int count = 0;
                 if (arr2[i] == 0 && flag) {
                     arrRes[k++] = arr2[i];
@@ -65,6 +68,7 @@ public class Task1 {
                 if (count == sizeRes) {
                     arrRes[k++] = arr2[i];
                 }
+                //}
             }
             int[] arrTemp = new int[k];
             System.arraycopy(arrRes, 0, arrTemp, 0, k);
@@ -76,35 +80,43 @@ public class Task1 {
         Arrays.fill(arrRes, 0);
         k = 0;
         {
-            for (int i = 0; i < arr1.length; i++) {
-                int count = 0;
-                for (int j = 0; j < arr1.length; j++) {
-                    if (arr1[i] != arr1[j]) {
-                        for (int f = 0; f < sizeRes; f++) {
-                            if (arr1[i] != arrRes[f]) {
-                                count++;
+            for (int i : arr1) {
+                //for (int i = 0; i < arr1.length; i++) {
+                    int count = 0;
+                    for (int j : arr1) {
+                        //for (int j = 0; j < arr1.length; j++) {
+                            if (arr1[i] != arr1[j]) {
+                                for (int f = 0; f < sizeRes; f++) {
+                                    if (arr1[i] != arrRes[f]) {
+                                        count++;
+                                    }
+                                }
                             }
-                        }
+                        //}
                     }
-                }
-                if (count == sizeRes) {
-                    arrRes[k++] = arr1[i];
-                }
+                    if (count == sizeRes) {
+                        arrRes[k++] = arr1[i];
+                    }
+                //}
             }
-            for (int i = 0; i < arr2.length; i++) {
-                int count = 0;
-                for (int j = 0; j < arr2.length; j++) {
-                    if (arr2[i] != arr2[j]) {
-                        for (int f = 0; f < sizeRes; f++) {
-                            if (arr2[i] != arrRes[f]) {
-                                count++;
+            for (int i : arr2) {
+                //for (int i = 0; i < arr2.length; i++) {
+                    int count = 0;
+                    for (int j : arr2) {
+                        //for (int j = 0; j < arr2.length; j++) {
+                            if (arr2[i] != arr2[j]) {
+                                for (int f = 0; f < sizeRes; f++) {
+                                    if (arr2[i] != arrRes[f]) {
+                                        count++;
+                                    }
+                                }
                             }
-                        }
+                        //}
                     }
-                }
-                if (count == sizeRes) {
-                    arrRes[k++] = arr2[i];
-                }
+                    if (count == sizeRes) {
+                        arrRes[k++] = arr2[i];
+                    }
+                //}
             }
             int[] arrTemp1 = new int[k];
             System.out.println(k);
