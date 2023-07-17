@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37dc5856-977c-40d4-a698-96c5e06cb7aa" name="Changes" comment="homeWork_16_07">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task1.java" afterDir="false" />
-    </list>
+    <list default="true" id="37dc5856-977c-40d4-a698-96c5e06cb7aa" name="Changes" comment="homeWork_16_07_1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +30,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "onboarding.tips.debug.path": "/Users/mac/IdeaProjects/MKA_Java_Praktika_10/src/Main.java"
+    "onboarding.tips.debug.path": "/Users/mac/IdeaProjects/MKA_Java_Praktika_10/src/Main.java",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -73,11 +71,33 @@
       <option name="project" value="LOCAL" />
       <updated>1689586259583</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="homeWork_16_07">
+      <created>1689586821323</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689586821323</updated>
+    </task>
+    <task id="LOCAL-00006" summary="homeWork_16_07">
+      <created>1689587134735</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689587134735</updated>
+    </task>
+    <task id="LOCAL-00007" summary="homeWork_16_07_1">
+      <created>1689587156264</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1689587156264</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="homeWork_16_07" />
-    <option name="LAST_COMMIT_MESSAGE" value="homeWork_16_07" />
+    <MESSAGE value="homeWork_16_07_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="homeWork_16_07_1" />
   </component>
 </project>
