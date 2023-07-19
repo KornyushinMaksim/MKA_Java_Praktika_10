@@ -6,7 +6,6 @@ public class Task8 {
     public static void main(String[] args) {
         Matrix matrix1 = new Matrix(2, 2);
         Matrix matrix2 = new Matrix(2, 2);
-        Matrix matrixRes = new Matrix(2, 2);
         matrix1.initMatrix();
         matrix2.initMatrix();
         matrix1.show();
@@ -14,12 +13,18 @@ public class Task8 {
         matrix2.show();
 
         //сумма матриц
+        Matrix summMtrx = matrix1.sumMtrx(matrix2);
+        System.out.println("\nсумма");
+        summMtrx.show();
 
-        for (int i = 0; i < matrixRes.row; i++){
-            for (int j = 0; j < matrixRes.cols; j++){
-                matrixRes.getArr()[i][j] = matrix1.getArr()[i][j] + matrix2.getArr()[i][j];
-            }
-        }
-        matrixRes.show();
+        //разность матриц
+        Matrix diffMtrx = matrix1.diffMtrx(matrix2);
+        System.out.println("\nразность");
+        diffMtrx.show();
+
+        //умножение матриц
+        Matrix multiMtrx = matrix1.multiMtrx(matrix2);
+        System.out.println("\nумножение");
+        multiMtrx.show();
     }
 }
