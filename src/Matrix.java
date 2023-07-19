@@ -14,6 +14,10 @@ public class Matrix {
         return arr;
     }
 
+    public void setArr(int row, int cols, int value) {
+        this.arr[row][cols] = value;
+    }
+
     public void initMatrix() {
         arr = new int[row][cols];
         for (int i = 0; i < this.arr.length; i++) {
@@ -32,8 +36,23 @@ public class Matrix {
         }
     }
 
+    public void show (){
+        for (int i = 0; i < this.arr.length; i++) {
+            for (int j = 0; j < this.arr[i].length; j++) {
+                if (arr[i][j] < 10) {
+                    System.out.print("  " + this.arr[i][j]);
+                }
+                else {
+                    System.out.print(" " + this.arr[i][j]);
+                }
+            }
+            System.out.println();
+        }
+    }
+
 
     public void printMatrix (){
         System.out.println(Arrays.deepToString(this.arr));
     }
+
 }
