@@ -44,19 +44,23 @@ public class Matrix {
                 if (arr[i][j] < 10) {
                     if (arr[i][j] < 0) {
                         if (arr[i][j] < -9) {
-                            System.out.print(" " + this.arr[i][j]);
-                        } else {
                             System.out.print("  " + this.arr[i][j]);
+                        } else {
+                            System.out.print("   " + this.arr[i][j]);
                         }
+                    } else {
+                        System.out.print("    " + this.arr[i][j]);
+                    }
+                }
+                else if (arr[i][j] < 100) {
+                    if (arr[i][j] < 0) {
+                        System.out.print("  " + this.arr[i][j]);
                     } else {
                         System.out.print("   " + this.arr[i][j]);
                     }
-                } else {
-                    if (arr[i][j] < 0) {
-                        System.out.print(" " + this.arr[i][j]);
-                    } else {
-                        System.out.print("  " + this.arr[i][j]);
-                    }
+                }
+                else {
+                    System.out.print("  " + this.arr[i][j]);
                 }
             }
             System.out.println();
@@ -96,6 +100,16 @@ public class Matrix {
             }
         }
         return resMtrx;
+    }
+
+    public void initMatrix (int value){
+        this.arr = new int[this.row][this.cols];
+        for (int i = 0; i < this.arr.length; i++){
+            for (int j = 0; j < this.arr[i].length; j++){
+                this.arr[i][j] = value;
+                value += 7;
+            }
+        }
     }
 
 }

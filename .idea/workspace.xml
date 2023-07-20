@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37dc5856-977c-40d4-a698-96c5e06cb7aa" name="Changes" comment="classWork_19_07">
+    <list default="true" id="37dc5856-977c-40d4-a698-96c5e06cb7aa" name="Changes" comment="homeWork_19_07">
+      <change afterPath="$PROJECT_DIR$/src/Task9.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Matrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task8.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689787924837</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="homeWork_19_07">
+      <created>1689805235256</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1689805235256</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,6 +128,7 @@
     <MESSAGE value="homeWork_16_07" />
     <MESSAGE value="homeWork_16_07_1" />
     <MESSAGE value="classWork_19_07" />
-    <option name="LAST_COMMIT_MESSAGE" value="classWork_19_07" />
+    <MESSAGE value="homeWork_19_07" />
+    <option name="LAST_COMMIT_MESSAGE" value="homeWork_19_07" />
   </component>
 </project>
